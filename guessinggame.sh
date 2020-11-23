@@ -1,4 +1,3 @@
-
 function guess(){
     true_ans=$(ls -l |grep "^-"|wc -l)
     while true;
