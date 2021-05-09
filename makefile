@@ -5,6 +5,7 @@ README.md: guessinggame.sh
 	echo "# guessingGameCoursera" > README.md
 	echo $$(date) >> README.md
 	echo "  \n" >> README.md
+	echo "No of lines: "
 	wc -l guessinggame.sh | egrep -o "[0-9]+" >> README.md
 clean:
 	rm README.md
