@@ -2,19 +2,19 @@ function guess(){
     true_ans=$(ls -l |grep "^-"|wc -l)
     while true;
     do
-        echo "Please enter your guess.."
+        echo "Please make your guess.."
         read  number
         if [ $number -lt $true_ans ]
         then
-            echo "Your guess is less then the true number"
+            echo "Your guess is less then the true number please make a guess again! "
         elif [ $number -gt $true_ans ]
         then
-            echo "Your guess is greater then the true number"
+            echo "Your guess is greater then the actual number please make the guess again! "
         else
-            echo " Congratulation,you are right!"
+            echo " Congratulations, Correct guess, You won the game!"
         break;
         fi
     done
 }
-echo "Guess the files number in the current directory!"
+echo "How many files are in the current directory?"
 guess
